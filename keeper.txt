@@ -1,0 +1,29 @@
+<section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container has-text-left">
+                <p class="title">
+                    Dan Swan
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="box cta">
+        <div class="container has-text-right">
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="nav-right nav-menu is-active" id="navMenu">
+                <a class="nav-item" href="#about">
+                    About
+                </a>
+                <a class="nav-item" href="#portfolio">
+                    Portfolio
+                </a>
+                <a class="nav-item" href="#contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>

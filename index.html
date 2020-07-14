@@ -1,126 +1,320 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="icon" href="Assets/favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
-  <link rel="stylesheet" href="Assets/styles.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Dan Swan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="icon" href="Assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.2/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <style>
+        .columns:nth-child(2) {
+            margin-top: -10rem;
+        }
+    </style>
 </head>
 
 <body>
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title has-text-right">
-          Dan Swan
-        </h1>
-
-        <div class="nav-right nav-menu is-active">
-          <a class="nav-item" href="#about">
-            About
-          </a>
-          <a class="nav-item" href="#portfolio">
-            Portfolio
-          </a>
-          <a class="nav-item" href="#contact">
-            Contact
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <section class="container" id="about">
-    <div class="">
-      <figure class="image is-center">
-        <img src="Assets/images/circle-cropped.png" alt="profile pic" id="profile-pic">
-      </figure>
-      <div>
-        <p>This is where my bio is going to go</p>
-      </div>
-    </div>
-  </section>
-  <section class="container" id="portfolio">
-    <div class="columns features">
-      <div class="column is-4">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque.
-                Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque
-                egestas cmonsu songue. Phasellus vestibulum lorem
-                sed risus.</p>
-              <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container has-text-center">
+                <p class="title">
+                    Dan Swan
+                </p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="column is-4">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque.
-                Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque
-                egestas cmonsu songue. Phasellus vestibulum lorem
-                sed risus.</p>
-              <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-4">
-        <div class="card is-shady">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>Tempor orci dapibus ultrices in.</h4>
-              <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque.
-                Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque
-                egestas cmonsu songue. Phasellus vestibulum lorem
-                sed risus.</p>
-              <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <section class="container" id="contact">
-
     </section>
-
-    <footer class="footer">
-      <div class="nav-middle">
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      </div>
-      <a class="nav-item">
-        <label>Designed with </label>
-        <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
-      </a>
+    <div class="box cta">
+        <div class="container has-text-right">
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <div class="nav-right nav-menu is-active" id="navMenu">
+                <a class="nav-item" href="#about">
+                    About |
+                </a>
+                <a class="nav-item" href="#portfolio">
+                    Portfolio |
+                </a>
+                <a class="nav-item" href="#contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  ===============
+    ABOUT ME SECTION
+    ===============  -->
+    <section class="container" id="about">
+        <div id="profile-pic">
+            <figure class="image">
+                <img src="Assets/images/circle-cropped.png" alt="profile pic" />
+            </figure>
+        </div>
+        <div id="bio">
+            <article id="bio-text">
+                <p>
+                    In 2020 I started a journey to become a web developer through an
+                    intensive 6 month bootcamp by Sydney Uni and Trilogy Education. This
+                    was a difficult but rewarding journey as I had no background in the
+                    technology industry. The bootcamp’s hands-on approach to learning
+                    has provided lots of practical experience. It has been an invaluable
+                    experience which has unlocked a few passions I didn’t really know I
+                    had. I enjoy problem solving. I love javascript. I appreciate
+                    creativity.
+                </p>
+                <br />
+                <p>
+                    I’ve spent the past 15 years caring for people in churches and local
+                    communities in NSW and QLD. Over this time I’ve gained experience in
+                    public speaking and honed my interpersonal communication skills.
+                    I’ve learnt to actively listen to people and understand their
+                    perspective. I’ve spent much time walking with others through their
+                    suffering and hardship. I’ve learnt that life is all about
+                    relationships. I’ve developed skills around research and writing.
+                    I’ve organised community welfare projects like “soup kitchens” and
+                    youth support. But the main focus of pastoral ministry is helping
+                    people and my experience caring for people is wide and diverse.
+                </p>
+                <br />
+                <p>
+                    My main motivation for pursuing web development is my family. I have
+                    a wonderful family and I’m committed to providing for them. But what
+                    I’ve learnt through my bootcamp is that the web has become an
+                    indispensable and in many ways unavoidable aspect of modern life.
+                    Most people don’t know how to create web sites and build an online
+                    presence for their organisation, clubs or businesses. I've come to
+                    understand that being a web developer provides me more opportunity
+                    to keep helping people.
+                </p>
+            </article>
+        </div>
+    </section>
+    <!--  ===============
+    PORTFOLIO SECTION
+    ===============  -->
+    <section class="container" id="portfolio">
+        <div class="columns features">
+            <!-- FIRST CARD -->
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="Assets/images/myMVP.png" alt="myMVP logo" id="myMVP-btn" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>My MVP app</h4>
+                            <p>
+                                This project was designed and completed in collobaration with
+                                Nikki Rees and Jeremy Carlos.
+                            </p>
+                            <span class="button is-link modal-button" data-target="myMVP-modal-card">More
+                                information</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SECOND CARD -->
+            <div class="column is-4">
+                <div class="card is-shady">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="Assets/images/ForeCast.png" alt="Forecast logo" id="forecast-btn" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>5 day weather forecast app</h4>
+                            <p>
+                                Ut venenatis tellus in metus vulputate. Amet consectetur
+                                adipiscing elit pellentesque. Sed arcu non odio euismod
+                                lacinia at quis risus. Faucibus turpis in eu mi bibendum neque
+                                egestas cmonsu songue. Phasellus vestibulum lorem sed risus.
+                            </p>
+                            <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- THIRD CARD -->
+            <div class="column is-4 modal-button" data-target="modal-image">
+                <div class="card is-shady">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="Assets/images/Workday.png" alt="workday scheduler" id="get-it-done-btn" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Click anywhere on card</h4>
+                            <p>
+                                Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut
+                                placerat orci nulla pellentesque dignissim enim. Libero id
+                                faucibus nisl tincidunt eget nullam. Commodo viverra maecenas
+                                accumsan lacus vel facilisis.
+                            </p>
+                            <span class="button is-link modal-button" data-target="modal-image">Image modal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOURTH CARD -->
+        <div class="columns features">
+            <div class="column is-4 modal-button" data-target="modal-card">
+                <div class="card is-shady">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="Assets/images/drum kit.png" alt="drumkit app screenshot" id="drumkit-btn" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h4>Click anywhere on card to <br />expand into modal card</h4>
+                            <p>
+                                Purus semper eget duis at tellus at urna condimentum mattis.
+                                Non blandit massa enim nec. Integer enim neque volutpat ac
+                                tincidunt vitae semper quis. Accumsan tortor posuere ac ut
+                                consequat semper viverra nam.
+                            </p>
+                            <span class="button is-link modal-button">Modal card</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content has-text-centered">
+            <div class="control level-item">
+                <a href="https://github.com/BulmaTemplates/bulma-templates">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Bulma Templates</span>
+                        <span class="tag is-info">MIT license</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </footer>
+    <!--  ===============
+    HTML FOD MODALS
+    ===============  -->
+    <!-- 3dFlipVertical card tiny -->
+    <div id="myMVP-modal-card" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-tiny">
+            <!-- content -->
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="Assets/images/myMVPscreen.png" alt="my MVP app screenshot" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>
+                            This project was made in collobaration with 2 other bootcamp
+                            students - Nikki Rees
+                            <a href="https://github.com/Nikki-Rees" target="_blank">(Github profile)</a>
+                            and Jeremy Carlos
+                            <a href="https://github.com/Jermayy" target="_blank">(Github profile)</a>.
+                        </p>
+                        <p>
+
+                        </p>
+                        <p>
+                            <a href="https://codenswan.github.io/MyMVP/" target="_blank">Deployed app
+                            </a>
+                            |
+                            <a href="https://github.com/codenswan/MyMVP">Github repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end content -->
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- end tiny modal card -->
+    <!-- 3dFlipVertical card tiny [butterfly] -->
+    <div id="modal-card2" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-tiny">
+            <!-- content -->
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg"
+                                    alt="linda barret avatar" />
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Jane Doe</p>
+                            <p class="subtitle is-6">@jane_doe</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm
+                        tellin' you way up north bookin' it can't get theyah from heeyah
+                        native bean suppah whawf Powrtland Museum of Aht, back woods
+                        hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
+                        Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah
+                        naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub
+                        If you can't stand the wintah you don't deserve the summah slower
+                        than molasses going uphill in January. Sgn'wahl shoggor hrii uaaah
+                        R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri
+                        nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep
+                        lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog
+                        cehye. Zhro y'hah nogoth phlegeth stell'bsna orr'e ph'Hastur
+                        gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg
+                        nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+                        <a>@bulmaio</a>.
+                        <a href="#">#css</a>
+                        <a href="#">#responsive</a>
+                        <br />
+                        <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+                    </div>
+                </div>
+            </div>
+            <!-- end content -->
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- end tiny modal card -->
+    <!-- Image modal -->
+    <div id="modal-image2" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge is-image">
+            <!-- content -->
+            <img src="Assets/images/myMVPscreen.png" alt="image" />
+            <!-- end content -->
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- SCRIPT LINKS -->
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
