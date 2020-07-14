@@ -23,33 +23,26 @@
 // });
 
   document.addEventListener("DOMContentLoaded", () => {
-    //The first argument are the elements to which the plugin shall be initialized
-    //The second argument has to be at least a empty object or a object with your desired options
     OverlayScrollbars(document.querySelectorAll("body"), {});
   });
 
-const myMVPdeployed = document.getElementById("myMVP-btn");
-  myMVPdeployed.addEventListener("click", () => {
-      window.open("https://codenswan.github.io/MyMVP/", "_blank")
-  });
+function openUrlOnClick(id, url) {
+    document.getElementById(id).addEventListener("click", () => {
+      window.open(url, "_blank");
+    });
+}
 
-const forecastDeployed = document.getElementById("forecast-btn");
-  forecastDeployed.addEventListener("click", () => {
-      window.open(
-        "https://codenswan.github.io/06-Server-Side-APIs-Weather-Dashboard/",
-        "_blank"
-      );
-  })
-
-const workdayDeployed = document.getElementById("get-it-done-btn");
-  workdayDeployed.addEventListener("click", () => {
-      window.open(
-        "https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler/",
-        "_blank"
-      );
-  })
-
-const drumKitDeployed = document.getElementById("drumkit-btn");
-  drumKitDeployed.addEventListener("click", () => {
-      window.open("https://codenswan.github.io/drumkit/", "_blank");
-  })
+openUrlOnClick(
+    "myMVP-btn", 
+    "https://codenswan.github.io/MyMVP/");
+openUrlOnClick(
+    "forecast-btn",
+    "https://codenswan.github.io/06-Server-Side-APIs-Weather-Dashboard/"
+);
+openUrlOnClick(
+    "get-it-done-btn",
+    "https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler/"
+);
+openUrlOnClick(
+    "drumkit-btn", 
+    "https://codenswan.github.io/drumkit/");

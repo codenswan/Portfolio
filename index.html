@@ -116,8 +116,12 @@
                         <div class="content">
                             <h4>My MVP app</h4>
                             <p>
-                                This project was designed and completed in collobaration with
-                                Nikki Rees and Jeremy Carlos.
+                                This application enables the user to search their favourite NBA player which will
+                                display the current 2019-2020 season stat average for the respective player - the
+                                browser will also render a youtube highlight video and display 5 GIFs to the user. The
+                                purpose of this project was to demonstrate team collaborative efforts in implementing
+                                AJAX functions, returning information from remote APIs and dynamically render new
+                                information to the browser as the user searches different players.
                             </p>
                             <span class="button is-link modal-button" data-target="myMVP-modal-card">More
                                 information</span>
@@ -137,18 +141,21 @@
                         <div class="content">
                             <h4>5 day weather forecast app</h4>
                             <p>
-                                Ut venenatis tellus in metus vulputate. Amet consectetur
-                                adipiscing elit pellentesque. Sed arcu non odio euismod
-                                lacinia at quis risus. Faucibus turpis in eu mi bibendum neque
-                                egestas cmonsu songue. Phasellus vestibulum lorem sed risus.
+                                This app helps a user plan a trip or an outing by providing current weather data for
+                                that day. The app also provides a 5 day forecast from the day of the search, showing
+                                weather data from 12pm for each of the 5 days. A user can search on multiple cities or
+                                towns that might be included in their trip and those searches are saved and can be
+                                reviewed later. The user can return to the weather dashboard and review forecast
+                                information for each of their selected cities.
                             </p>
-                            <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                            <span class="button is-link modal-button" data-target="forecast-modal-card">More
+                                information</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- THIRD CARD -->
-            <div class="column is-4 modal-button" data-target="modal-image">
+            <div class="column is-4">
                 <div class="card is-shady">
                     <div class="card-image">
                         <figure class="image is-4by3">
@@ -157,14 +164,17 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <h4>Click anywhere on card</h4>
-                            <p>
-                                Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut
-                                placerat orci nulla pellentesque dignissim enim. Libero id
-                                faucibus nisl tincidunt eget nullam. Commodo viverra maecenas
-                                accumsan lacus vel facilisis.
-                            </p>
-                            <span class="button is-link modal-button" data-target="modal-image">Image modal</span>
+                            <h4>Workday scheduler</h4>
+                            <Another>
+                                This simple app is designed to aid the user in task completion and efficiency. The user
+                                can add tasks and save them to local storage and will remain until completed and deleted
+                                from storage. This is easy to do. The user simple selects the completed task and hits
+                                delete and resaves to local storage. Another handy feature of the app is the timer
+                                display. The user is kept up to date with past, present and future time through colour
+                                coding for each hour block.
+                                </p>
+                                <span class="button is-link modal-button" data-target="get-it-done-modal-card">More
+                                    information</span>
                         </div>
                     </div>
                 </div>
@@ -172,7 +182,7 @@
         </div>
         <!-- FOURTH CARD -->
         <div class="columns features">
-            <div class="column is-4 modal-button" data-target="modal-card">
+            <div class="column is-4">
                 <div class="card is-shady">
                     <div class="card-image">
                         <figure class="image is-4by3">
@@ -181,27 +191,103 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <h4>Click anywhere on card to <br />expand into modal card</h4>
+                            <h4>Keyboard Drumkit</h4>
                             <p>
-                                Purus semper eget duis at tellus at urna condimentum mattis.
-                                Non blandit massa enim nec. Integer enim neque volutpat ac
-                                tincidunt vitae semper quis. Accumsan tortor posuere ac ut
-                                consequat semper viverra nam.
+                                This was a small project I worked on through a Udemy <a
+                                    href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                                    target="_blank">fullstack
+                                    web development course.</a>
                             </p>
-                            <span class="button is-link modal-button">Modal card</span>
+
+                            <p>
+                                The user can imitate a drumkit by either clicking on the image or pressing the nominated
+                                keys.
+                            </p>
+                            <p>
+                                It's not a very useful app and was mostly completed to learn javascript but my kids do
+                                love playing around with it.
+                            </p>
+                            <span class="button is-link modal-button" data-target="drumkit-modal-card">More
+                                information</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--  ===============
+    CONTACT ME SECTION
+    ===============  -->
+    <section class="container" id="contact">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+        </div>
+
+        <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Subject">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Message"></textarea>
+            </div>
+        </div>
+
+        
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            
+        </div>
+
+
+
+    </section>
     <footer>
         <div class="content has-text-centered">
             <div class="control level-item">
-                <a href="https://github.com/BulmaTemplates/bulma-templates">
+                    <a id="logos" href="https://www.linkedin.com/in/daniel-swan-a6776a1a9/" target="_blank">
+                        <img src="Assets/images/linkedin.png" alt="linkedin logo" />
+                    </a>
+                    <a id="logos" href="https://github.com/codenswan" target="_blank">
+                        <img src="Assets/images/logo.png" alt="github logo">
+                    </a>
+            </div>
+            <div class="control level-item">
+                <a href="https://bulmatemplates.github.io/bulma-templates/" target="_blank">
                     <div class="tags has-addons">
-                        <span class="tag is-dark">Bulma Templates</span>
-                        <span class="tag is-info">MIT license</span>
+                        <p>Inspiration for Bulma modals from <span class="tag is-dark">Bulma Templates.</span>
+                        </p>
+
                     </div>
                 </a>
             </div>
@@ -210,7 +296,7 @@
     <!--  ===============
     HTML FOD MODALS
     ===============  -->
-    <!-- 3dFlipVertical card tiny -->
+    <!-- FIRST MODAL CARD -->
     <div id="myMVP-modal-card" class="modal modal-fx-3dSlit">
         <div class="modal-background"></div>
         <div class="modal-content is-tiny">
@@ -230,14 +316,42 @@
                             and Jeremy Carlos
                             <a href="https://github.com/Jermayy" target="_blank">(Github profile)</a>.
                         </p>
-                        <p>
-
+                        <p>Keypoints:
+                            <ul>
+                                <li>
+                                    Utilised jQuery functionality to call AJAX methods and request information from
+                                    remote APIs
+                                    Demostrated calling a nested AJAX function using information returned from initial
+                                    AJAX
+                                    request.
+                                </li>
+                                <li>Remote APIs used:
+                                    <ul>
+                                        <li> Balldontlie.io
+                                        </li>
+                                        <li> GIPHY
+                                        </li>
+                                        <li> Youtube Data API
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Use of Bulma CSS Framework to style the application.
+                                </li>
+                                <li>
+                                    Use of local storage to save any previously saved players and render the last
+                                    displayed player upon refresh of browser
+                                </li>
+                                <li>
+                                    Use of Bulma Framework to implement a slider function for rendered gifs
+                                </li>
+                            </ul>
                         </p>
                         <p>
                             <a href="https://codenswan.github.io/MyMVP/" target="_blank">Deployed app
                             </a>
                             |
-                            <a href="https://github.com/codenswan/MyMVP">Github repo</a>
+                            <a href="https://github.com/codenswan/MyMVP" target="_blank">Github repo</a>
                         </p>
                     </div>
                 </div>
@@ -246,70 +360,147 @@
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    <!-- end tiny modal card -->
-    <!-- 3dFlipVertical card tiny [butterfly] -->
-    <div id="modal-card2" class="modal modal-fx-3dSlit">
+    <!-- SECOND MODAL CARD -->
+    <div id="forecast-modal-card" class="modal modal-fx-3dSlit">
         <div class="modal-background"></div>
         <div class="modal-content is-tiny">
-            <!-- content -->
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly" />
+                        <img src="Assets/images/weather app.png" alt="weather forecast app screenshot" />
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg"
-                                    alt="linda barret avatar" />
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">Jane Doe</p>
-                            <p class="subtitle is-6">@jane_doe</p>
-                        </div>
-                    </div>
                     <div class="content">
-                        Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm
-                        tellin' you way up north bookin' it can't get theyah from heeyah
-                        native bean suppah whawf Powrtland Museum of Aht, back woods
-                        hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
-                        Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah
-                        naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub
-                        If you can't stand the wintah you don't deserve the summah slower
-                        than molasses going uphill in January. Sgn'wahl shoggor hrii uaaah
-                        R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri
-                        nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep
-                        lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog
-                        cehye. Zhro y'hah nogoth phlegeth stell'bsna orr'e ph'Hastur
-                        gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg
-                        nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-                        <a>@bulmaio</a>.
-                        <a href="#">#css</a>
-                        <a href="#">#responsive</a>
-                        <br />
-                        <time datetime="2018-02-02">12:45 AM - 20 May 2018</time>
+                        <p>
+                            This weather dashboard utilises data provided by
+                            <a href="https://openweathermap.org/">the open weather api</a>. The apis were used in this
+                            assignment:
+                            <ul>
+                                <li>Current weather data <a
+                                        href="https://openweathermap.org/current">openweathermap.org/current</a>
+                                </li>
+                                <li>Ultraviolet Index <a
+                                        href="https://openweathermap.org/api/uvi">openweathermap.org/api/uvi</a>
+                                </li>
+                                <li>5 day weather forecast <a
+                                        href="https://openweathermap.org/forecast5">openweathermap.org/forecast5</a>
+                                </li>
+                            </ul>
+                            <br>
+                            <p>
+                                This app helps a user plan a trip or an outing by providing current weather data for
+                                that
+                                day. The app also provides a 5 day forecast from the day of the search, showing weather
+                                data
+                                from 12pm for each of the 5 days. A user can search on multiple cities or towns that
+                                might
+                                be included in their trip and those searches are saved and can be reviewed later. The
+                                user
+                                can return to the weather dashboard and review forecast information for each of their
+                                selected cities.
+                            </p>
+                        </p>
+                        <p>
+                            <a href="https://codenswan.github.io/06-Server-Side-APIs-Weather-Dashboard/"
+                                target="_blank">Deployed app
+                            </a>
+                            |
+                            <a href="https://github.com/codenswan/06-Server-Side-APIs-Weather-Dashboard"
+                                target="_blank">Github repo</a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <!-- end content -->
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    <!-- end tiny modal card -->
-    <!-- Image modal -->
-    <div id="modal-image2" class="modal modal-fx-3dSlit">
+    <!-- THIRD MODAL CARD -->
+    <div id="get-it-done-modal-card" class="modal modal-fx-3dSlit">
         <div class="modal-background"></div>
-        <div class="modal-content is-huge is-image">
-            <!-- content -->
-            <img src="Assets/images/myMVPscreen.png" alt="image" />
-            <!-- end content -->
+        <div class="modal-content is-tiny">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="Assets/images/get-it-done-screen.png" alt="work day scheduler screenshot" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>
+                            This day planner app uses moment.js to colour code the hour blocks on the planner
+                            according to the styling in styles.css.
+                        </p>
+                        <br>
+                        <p>
+                            The code is quite simple and clean. More complex code is needed to create html via js.
+                            But this simple design still works with much less code.
+                        </p>
+                        <br>
+                        <p>
+                            I added a second js file for the clock function in the jumbotron. I initially did this
+                            so I could work on the rest of the code without the clock update function stalling.
+                        </p>
+                        <br>
+                        <p>
+                            A feature to be added to future updates is a timer that uses the Pomodoro Technique. This
+                            will add more functionality for the user to achieve greater efficiency and workday balance.
+                        </p>
+                        <p>
+                            <a href="https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler"
+                                target="_blank">Deployed app
+                            </a>
+                            |
+                            <a href="https://github.com/codenswan/05-Third-Party-APIs-Work-Day-Scheduler"
+                                target="_blank">Github
+                                repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
     </div>
-
+    <!-- FOURTH MODAL CARD -->
+    <div id="drumkit-modal-card" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-tiny">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="Assets/images/drumkit screen.png" alt="keyboard drumkit screenshot" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>
+                            This drum kit uses switch statements and keypress functions to make sounds of a drumkit.
+                        </p>
+                        <br>
+                        <p>
+                            A for loop iterates over all the drum buttons and triggers sound functions and button
+                            animations for stylistic effect.
+                        </p>
+                        <br>
+                        <p>
+                            A future update of this project will include additional keys/buttons with other instrument
+                            sounds like guitar and horn, for example. What would really make this app appealing to my
+                            kids is adding a voice or sound recorder that could record singing, beatboxing or even
+                            enable them to create their own instrument-like sounds.
+                        </p>
+                        <p>
+                            <a href="https://codenswan.github.io/drumkit/" target="_blank">Deployed app
+                            </a>
+                            |
+                            <a href="https://github.com/codenswan/drumkit" target="_blank">Github
+                                repo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
     <!-- SCRIPT LINKS -->
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

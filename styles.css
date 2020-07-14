@@ -101,7 +101,8 @@ footer li:before {
     margin: 0 auto
 }
 
-#bio {
+#bio,
+#contact {
     margin-top: 50px;
     color: black;
     font-size: large;
@@ -113,4 +114,24 @@ article {
     padding: 20px;
     border-radius: 12px 12px 12px 12px;
     box-shadow: 10px 5px 5px grey;
+}
+
+p {
+    text-align: justify;
+}
+
+#contact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#logos {
+    width: 100px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    float: left;
 }
